@@ -1,0 +1,59 @@
+﻿<form action="Equation" class="form-group" name="equation">
+    <h1>
+        <label>Inserte la función</label>
+    </h1>
+    <input type="text" class="form-control input-lg" disabled name="equa">
+
+
+    <div class="grid-container">
+        <button type="button" class="btn btn-info grid-item" value="+" onclick="writeInput('+')">+</button>
+        <button type="button" class="btn btn-info grid-item" value="-" onclick="writeInput('-')">-</button>
+        <button type="button" class="btn btn-info grid-item" value="*" onclick="writeInput('*')">*</button>
+
+        <button type="button" class="btn btn-info grid-item" value="/" onclick="writeInput('/')">&divide;</button>
+        <button type="button" class="btn btn-info grid-item" value="^" onclick="writeInput('^')">^</button>
+        <button type="button" class="btn btn-light grid-item" value="^" onclick="writeInput('*x')">x</button>
+
+        <p></p>
+        <p></p>
+        <p></p>
+
+        <button type="button" value="1" class="btn btn-light grid-item" onclick="writeInput('1')">1</button>
+        <button type="button" value="2" class="btn btn-light grid-item" onclick="writeInput('2')">2</button>
+        <button type="button" value="3" class="btn btn-light grid-item" onclick="writeInput('3')">3</button>
+
+        <button type="button" value="4" class="btn btn-light grid-item" onclick="writeInput('4')">4</button>
+        <button type="button" value="5" class="btn btn-light grid-item" onclick="writeInput('5')">5</button>
+        <button type="button" value="6" class="btn btn-light grid-item" onclick="writeInput('6')">6</button>
+
+        <button type="button" value="9" class="btn btn-light grid-item" onclick="writeInput('7')">7</button>
+        <button type="button" value="4" class="btn btn-light grid-item" onclick="writeInput('8')">8</button>
+        <button type="button" value="5" class="btn btn-light grid-item" onclick="writeInput('9')">9</button>
+
+        <p></p>
+        <button type="button" value="6" class="btn btn-light grid-item" onclick="writeInput('0')">0</button>
+        <button type="button" value="6" class="btn btn-danger grid-item" onclick="deleteInput()">Delete</button>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col">
+            <h3>
+                <label>Xi</label>
+            </h3>
+            <input type="number" class="form-control" placeholder="0">
+        </div>
+        <div class="col">
+            <h3>
+                <label>Xs</label>
+            </h3>
+            <input type="number" class="form-control" placeholder="1">
+        </div>
+        <div class="col">
+            <h3>
+                <label>h</label>
+            </h3>
+            <input type="number" class="form-control" placeholder="1">
+    </div>
+</form>
+
